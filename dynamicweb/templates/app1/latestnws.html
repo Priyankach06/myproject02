@@ -1,0 +1,34 @@
+{%extends "app1/home.html"%}
+
+{%block title%}
+<title>LATEST NEWS</title>
+{%endblock%}
+
+{%block body_block%}
+<center>
+<br>
+<h2>LATEST NEWS</h2>
+<br>
+<table border=2; style="width: 600px; height: 120px">
+	<thead>
+		
+		<th>DETAILS</th>
+	</thead>
+
+{%for i in n%}
+
+<tr>
+	
+	<td>{{i.Occation}}</td>
+	
+</tr>
+{%endfor%}
+</table>
+<br>
+
+<a href="/hldy"><button>CALENDER HOLIDAYS</button></a>
+
+</center>
+
+
+{%endblock%}

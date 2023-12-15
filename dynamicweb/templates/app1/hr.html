@@ -1,0 +1,35 @@
+{%extends "app1/home.html"%}
+
+{%block title%}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR</title>
+<style>
+	.button-container {
+		display:grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap:50px;
+	}
+	.button{
+		margin: 75px;
+		padding:15px 32px;
+		font-size:16px;
+		background-color:#9400D3;
+		color:white;
+		border:none;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+</style>
+{%endblock%}
+
+{%block body_block%}
+
+<div class="button-container">
+	<center><a href="/addemp/"><button class="button" style="height: 80px;width: 250px">ADD EMPLOYEE</button></a></center>
+	<center><a href="/empdata/"><button class="button" style="height: 80px;width: 250px">VIEW EMPLOYEE DATA</button></a></center>
+	<center><a href="/news/"><button class="button" style="height: 80px;width: 250px">ADD LATEST NEWS</button></a></center>
+	<center><a href="/cal/"><button class="button" style="height: 80px;width: 250px">ADD CALENDER</button></a></center>
+</div>
+
+{%endblock%}

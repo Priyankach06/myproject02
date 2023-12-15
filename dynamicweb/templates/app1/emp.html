@@ -1,0 +1,34 @@
+{%extends "app1/home.html"%}
+
+{%block title%}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMP</title>
+<style>
+	.button-container {
+		display:grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap:50px;
+	}
+	.button{
+		margin: 150px;
+		padding: 10px 20px;
+		font-size:16px;
+		background-color:#9400D3;
+		color:white;
+		border:none;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+</style>
+{%endblock%}
+
+{%block body_block%}
+
+<div class="button-container">
+	<center><a href="/hldy/"><button class="button" style="height: 80px;width: 250px">CALENDER HOLIDAYS</button></a></center>
+	<center><a href="/latestnws/"><button class="button" style="height: 80px;width: 250px">LATEST NEWS</button></a></center>
+</div>
+
+
+{%endblock%}	

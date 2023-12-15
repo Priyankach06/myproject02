@@ -1,0 +1,49 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="{%static "css/style.css"%}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+ 
+    <a class="navbar-brand" href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMu2F9ZHazTiVmAzNeKysLzrxJ554BcG5MuA&usqp=CAU" style= "width:80%; height: 40px;float: left;"class="a"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/hr">HR MANAGER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/emp">EMPLOYEE</a>
+        </li>
+      </ul> 
+    </div>
+  </div>
+</nav>
+
+{%block title%}
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOME</title>
+{%endblock%}
+
+{%block body_block%}
+<center>
+	<img src="https://www.hillsdale.edu/wp-content/uploads/2017/02/Office-Environment-.jpg"
+	style= "width:100%; height: 430px"><br></center>
+	<center><h1>Welcome to Startcode Solutions</h1></center>
+	<p>Startcode Solutions is a Realtime Training Company offering Courses on varied IT Technologies like Fullstack Development, Python, React JS, Node JS, Web Design & PHP with MySQL, Digital Marketing, Java, UI/UX Designing & Development, Oracle Modules, Angularjs, SAP Modules, Cloud Computing, Graphic Designing etc. Established in 2009 Srartcode Solutions has successfully Trained upwards of 27,000+ Students. Startcode Solutions offers Excellent Software courses with end to end support to the candidates. Srartcode Solution is a one stop shop for IT services & Training in Hyderabad, India.Startcode Solutions takes all the efforts to provide flexible and friendly software training programs to all right from beginners to professionals who wish to learn new techniques and current trends. We offer software courses training with Real Time Projects by Industry Experts We Provide Training for Design Unique websites & Develop Web Application, Digital Marketing Solutions like SEO, SMM, PPC (Google Ads) and help businesses create their brand. Srartcode Solution built a Relationship with students, who allows us to build up a tailored branding plan advance. Srartcode Solution offers Excellent Software Courses with end to end support to the candidates.We provide Quality of Training as per International Standards, Provide Real time Training with Live Project, Students satisfaction is the ultimate goal for us, Business ethics is more important than money, Help students to reach their true potential with Personality Development, Help students to become entrepreneurs with motivation and support.</p>
+	
+
+
+
+
+
+{%endblock%}

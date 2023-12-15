@@ -1,0 +1,21 @@
+{%extends "app1/home.html"%}
+
+
+{%block title%}
+<title>CALENDER</title>
+{%endblock%}
+
+
+{%block body_block%}
+<center>
+	<br>
+	<h2>ADD HOLIDAYS</h2>
+	<br>
+
+	<form method="POST">
+		{%csrf_token%}
+		{{form.as_p}}
+		<button>SUBMIT</button>
+	</form>
+</center>
+{%endblock%}
